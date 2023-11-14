@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <head>
+    <style>
+
+body{
+    background-color: lightpink;
+
+}
+h2{
+     background-color: palevioletred; padding: 10px; color: white; text-shadow: 2px 2px 4px #000000;  text-align: center; margin: 0px; 
+}
+img{
+    border: 2px solid black; text-align: left;
+}
+p{
+  color: white; text-shadow: 2px 2px 4px #000000; 
+}
+input{
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; border: rgb(212, 89, 130) solid 2px;
+}
+button{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; border: rgb(212, 89, 130) solid 2px;
+}
+        
+    </style>
 </head>
 <body>
+    <script>
+        function  sub1() {
+    let text1 = document.getElementById("text1").value;
+    let p1 = document.getElementById("p1")
+    text = text1.replace(/[.*+?^${}()|[/]\\]/g,"\\$&");
+    let pattern = new RegEXP('&{text1}',"gi");
+
+    p1.innerHTML = p1.textContent.replace(pattern, match => '<mark>${match}</mark>')
+}
+    </script>
 <h2>Aesthetic Pintrest Pictures</h2>
 <br>
 <img src="https://i.pinimg.com/736x/cd/35/ed/cd35ed4c0a275aa1956301010ba3cb0e.jpg" height="170px" width="100px">
